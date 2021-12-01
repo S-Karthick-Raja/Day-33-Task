@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+image{
+  filter: blur(10px);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-container{
+  width: 280px;
+  background-color: rgba(16, 212, 169, 0.473);
+  border-radius: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-poster{
+  height: 350px;
+  width: 280px;
+  object-fit: cover;
+}
+.movie-specs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.checked {
+  margin: 0px;
+  color: orange;
+}
+.movie-rating{
+  margin: 0px;
+  font-size: 15px;
+}
+.movie-name{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 0px;
+  font-size: 14px;
+}
+.movie-summary{
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 80px;
+}
+.movie-list{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+  justify-content:space-between;
+}
+.css-1t6e9jv-MuiCardActions-root {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.css-46bh2p-MuiCardContent-root {
+  padding: 16px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.show-button{
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(67, 39, 10, 0.795);
+  color:white;
+  font-weight: bold;
+  border: none;
+}
+.material-icons{
+  font-size: 20px;
+}
+.add-color-form{
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  flex-direction: row;
+  width: 250px;
+}
+.addcolor-div{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 24px;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+
+}
+.add-button{
+  display: flex;
+  justify-content: space-around;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.Add-movie-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  grid-gap: 20px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.text-field{
+  width: 250px;
+}
+.wrap-movie-list{
+  padding: 20px;
+  padding-top: 0px;
+}
+.description{
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+  font-size: 20px;
+  font-family:sans-serif;
+  font-weight: bold;
+  display: flex;
+  gap: 24px;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+}
+.home{
+  text-align: center;
+  color: crimson;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.not-found-image{
+  width: 100%;
+  object-fit: contain;
+}
+.not-found-container{
+  text-align: center;
+  color:teal;
+}
+.movie-detail-page{
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  width: 300px;
+  height: 50px;
+}
+.movie-summary-page{
+  padding-left: 16px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.5px;
+}
+.movie-name-page{
+color: crimson;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 24px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.game-box{
+  background-color: white ;
+  color: black;
+  height: 8rem;
+  width: 8rem;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.game-box:hover{
+  cursor: pointer;
+}
+.board{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); */
+  width: min-content;
+}
+.full-game{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

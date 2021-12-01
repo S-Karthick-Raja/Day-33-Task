@@ -1,0 +1,74 @@
+ // const INITIAL_MOVIES = [
+  //   {
+  //     name: " Eternals",
+  //     rating:"6.9",
+  //     summary:"The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BMTExZmVjY2ItYTAzYi00MDdlLWFlOWItNTJhMDRjMzQ5ZGY0XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg",
+  //     trailer:"https://www.youtube.com/embed/x_me3xsvDgk",
+  //   },
+  //   {
+  //     name: " Dune",
+  //     rating:"8.2",
+  //     summary:"Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+  //     poster:"https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale",
+  //     trailer:"https://www.youtube.com/embed/8g18jFHCLXk",
+  //   }, 
+  //   {
+  //     name: "Army of Thieves",
+  //     rating:"6.4",
+  //     summary:"A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BNzQxYzNjMGItNzVlMS00NjBhLWI4NTItMmVkZTI0NGE3ZDI2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  //     trailer:"https://www.youtube.com/embed/Ith2WetKXlg",
+  //   },
+  //   {
+  //     name: "The Harder They Fall",
+  //     rating:"6.6",
+  //     summary:"When an outlaw discovers his enemy is being released from prison, he reunites his gang to seek revenge in this Western.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BYjg4NGExN2EtZmMxYy00ZDEwLWJiZGEtOWRiN2RlMGE0OWE0XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg",
+  //     trailer:"https://www.youtube.com/embed/Poc55U2RPMw",
+  //   },
+  //   {
+  //     name: "Squid Game",
+  //     rating:"8.1",
+  //     summary:"Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg",
+  //     trailer:"https://www.youtube.com/embed/oqxAJKy0ii4",
+  //   },
+  //   {
+  //     name: "Last Night in Soho",
+  //     rating:"7.5",
+  //     summary:"An aspiring fashion designer is mysteriously able to enter the 1960s where she encounters a dazzling wannabe singer. But the glamour is not all it appears to be and the dreams of the past start to crack and splinter into something darker.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BZjgwZDIwY2MtNGZlNy00NGRlLWFmNTgtOTBkZThjMDUwMGJhXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
+  //     trailer:"https://www.youtube.com/embed/AcVnFrxjPjI",
+  //   },
+  //   {
+  //     name: "No Time to Die",
+  //     rating:"7.5",
+  //     summary:"James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg",
+  //     trailer:"https://www.youtube.com/embed/BIhNsAtPbPI",
+  //   },
+  //   {
+  //     name: "Finch",
+  //     rating:"7.0",
+  //     summary:"On a post-apocalyptic earth, a robot, built to protect the life of his creator's beloved dog, learns about life, love, friendship and what it means to be human.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BZTMxYjk3MmItMzk1OC00NmRhLThlMjYtNmQyNzA0MzgxMWI2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+  //     trailer:"https://www.youtube.com/embed/-0bYWnP3jH4",
+  //   },
+  //   {
+  //     name: "The French Dispatch",
+  //     rating:"7.5",
+  //     summary:"A love letter to journalists set in an outpost of an American newspaper in a fictional twentieth century French city that brings to life a collection of stories published in ",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BNmQxZTNiODYtNzBhYy00MzVlLWJlN2UtNTc4YWZjMDIwMmEzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+  //     trailer:"https://www.youtube.com/embed/TcPk2p0Zaw4",
+  //   },
+  //   {
+  //     name : "Maid",
+  //     rating:"8.5",
+  //     summary:"After fleeing an abusive relationship, a young mother finds a job cleaning houses as she fights to provide for her child and build them a better future.",
+  //     poster:"https://m.media-amazon.com/images/M/MV5BY2RhNmZmZmQtYzQ4ZS00MDYyLTgwMmUtZGY5NDMwNDQzNWI1XkEyXkFqcGdeQXVyOTMzOTMzMTg@._V1_FMjpg_UX1000_.jpg",
+  //     trailer:"https://www.youtube.com/embed/tGtaHcqsSE8",
+  //   },
+  // ];
+
+  
