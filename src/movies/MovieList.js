@@ -35,8 +35,8 @@ export function MovieList() {
   // }, []);
 
   // DELETE - METHOD //after deleting -> refresh
-  const deleteMovie = (id) => {
-    fetch(`${API_URL}/movies/${id}`, {
+  const deleteMovie = (_id) => {
+    fetch(`${API_URL}/movies/${_id}`, {
       method: "DELETE",
     }).then(() => getMovies());
   };
@@ -45,8 +45,8 @@ export function MovieList() {
     <section className="movie-list">
       {movies.map(({ name, rating, summary, poster, id, _id }) => (
         <Movies
-          key={id}
-          id={id}
+          key={_id}
+          id={_id}
           name={name}
           rating={rating}
           summary={summary}
